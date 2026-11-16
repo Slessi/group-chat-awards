@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>*,*::before,*::after{box-sizing:border-box}body{margin:0}</style>
+<title>Group Chat Awards 2025–26</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: an awards-night programme — a banner, a stat strip, then category sections as wrapping grids of award cards */
+:root{
+  --bg:#f5f6fa; --surface:#ffffff; --ink:#141a33; --muted:#5b6283; --line:#dfe2ee;
+  --gold:#b07a12; --gold-soft:#f6ecd4; --red:#c4243a; --red-soft:#fbe5e8;
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --body:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0e1226; --surface:#171c36; --ink:#eef0fa; --muted:#a3a9c7; --line:#2a3052;
+  --gold:#e9b949; --gold-soft:#2e2a1c; --red:#ff6b7f; --red-soft:#33192a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e1226; --surface:#171c36; --ink:#eef0fa; --muted:#a3a9c7; --line:#2a3052;
+  --gold:#e9b949; --gold-soft:#2e2a1c; --red:#ff6b7f; --red-soft:#33192a; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55}
+.wrap{max-width:1080px;margin:0 auto;padding-block:40px 64px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  display:flex;flex-direction:column;gap:48px}
+header{display:flex;flex-direction:column;gap:14px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(38px,7vw,72px);line-height:1;margin:0;text-wrap:balance;letter-spacing:-.02em}
+.lede{color:var(--muted);max-width:62ch;margin:0}
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.strip div{background:var(--surface);padding:14px 16px}
+.strip b{display:block;font-family:var(--display);font-size:26px;font-weight:800;font-variant-numeric:tabular-nums}
+.strip span{font-size:12px;color:var(--muted)}
+section{display:flex;flex-direction:column;gap:18px}
+h2{font-family:var(--display);font-weight:800;font-size:28px;margin:0;letter-spacing:-.01em;text-wrap:balance}
+.sub{color:var(--muted);margin:-10px 0 0;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.award{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.neg .award{color:var(--red)}
+.who{font-family:var(--display);font-weight:800;font-size:22px;line-height:1.15}
+.why{color:var(--muted);font-size:14px;margin:0}
+.why em{font-style:normal;color:var(--ink);font-weight:600}
+.headline{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.big{border-radius:12px;padding:22px;display:flex;flex-direction:column;gap:8px;border:1px solid var(--line)}
+.big.mvp{background:var(--gold-soft)} .big.vil{background:var(--red-soft)} .big.heart{background:var(--surface)}
+.big .who{font-size:30px}
+.big.vil .award{color:var(--red)}
+table{border-collapse:collapse;width:100%;font-size:14px}
+.tbl{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);white-space:nowrap}
+th{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500}
+td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right} th.n{text-align:right}
+tr:last-child td{border-bottom:0}
+tr.top td{color:var(--red);font-weight:600}
+.bar{display:inline-block;height:8px;border-radius:4px;background:var(--red);vertical-align:middle}
+blockquote{margin:0;padding:12px 16px;border-left:3px solid var(--red);background:var(--surface);border-radius:0 8px 8px 0;font-style:italic}
+footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:18px;max-width:75ch}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">Feb 2025 – Nov 2026 · 49,130 messages · 21 regulars</div>
+  <h1>The Group Chat Awards</h1>
+  <p class="lede">Every award below comes from counting the chat export: who posts what, when, and how often. Rates are per message sent, so people who post less still get a fair shot.</p>
+  <div class="strip">
+    <div><b>49,130</b><span>messages</span></div>
+    <div><b>534</b><span>on the busiest day (31 May 2026, election weekend)</span></div>
+    <div><b>1,109</b><span>images from one person</span></div>
+    <div><b>52</b><span>messages in a row, the record</span></div>
+  </div>
+</header>
+
+<section>
+  <h2>Headliners</h2>
+  <div class="headline">
+    <div class="big mvp"><div class="award">MVP</div><div class="who">Paul</div><p class="why">Most content, most tagged (200 @mentions), up early and active on weekends. The chat runs on him.</p></div>
+    <div class="big vil"><div class="award">Most Toxic</div><div class="who">Thomas</div><p class="why">Aims insults at group members about 10 times more often than anyone else. Also posts late at night, edits the most, and kills conversations.</p></div>
+    <div class="big heart"><div class="award">Heart of the Group</div><div class="who">Martin</div><p class="why">The most thanks, congrats, love and "proud of you" messages, well ahead of everyone else.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>The toxicity table</h2>
+  <p class="sub">Insults aimed at someone in the group: a name, "you" or "ur" near the insult.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Person</th><th class="n">Aimed insults</th><th class="n">Messages</th><th class="n">Per 1,000</th><th></th></tr></thead>
+    <tbody>
+      <tr class="top"><td>Thomas</td><td class="n">20</td><td class="n">1,727</td><td class="n">11.6</td><td><span class="bar" style="width:116px"></span></td></tr>
+      <tr><td>Stefano</td><td class="n">7</td><td class="n">6,597</td><td class="n">1.1</td><td><span class="bar" style="width:11px"></span></td></tr>
+      <tr><td>Karl</td><td class="n">4</td><td class="n">3,656</td><td class="n">1.1</td><td><span class="bar" style="width:11px"></span></td></tr>
+      <tr><td>Miguel</td><td class="n">5</td><td class="n">4,454</td><td class="n">1.1</td><td><span class="bar" style="width:11px"></span></td></tr>
+      <tr><td>Paul</td><td class="n">4</td><td class="n">7,605</td><td class="n">0.5</td><td><span class="bar" style="width:5px"></span></td></tr>
+      <tr><td>Samuel</td><td class="n">1</td><td class="n">7,704</td><td class="n">0.1</td><td><span class="bar" style="width:2px"></span></td></tr>
+    </tbody>
+  </table></div>
+  <blockquote>"Oh god I didn't think you two clowns woke before midday." — Thomas, 28 Aug 2026</blockquote>
+  <div class="grid">
+    <div class="card"><div class="award">Most Foul-Mouthed</div><div class="who">Samuel</div><p class="why">The most swearing overall, in English and Maltese. Nearly all of it is aimed at traffic, articles or Tuesdays, not at people.</p></div>
+    <div class="card"><div class="award">Runner-up, Toxic</div><div class="who">Stefano</div><p class="why">High volume, saves the worst for politicians, and gives Thomas as good as he gets.</p></div>
+    <div class="card"><div class="award">Cleanest Mouths</div><div class="who">Peter, James, Philip F., Jerry</div><p class="why">The lowest swearing rates in the chat.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Habits</h2>
+  <div class="grid">
+    <div class="card"><div class="award">The Group Chat Itself</div><div class="who">Samuel</div><p class="why"><em>7,704</em> messages, the most of anyone. Paul is right behind with 7,605.</p></div>
+    <div class="card"><div class="award">Chief Content Officer</div><div class="who">Paul</div><p class="why"><em>1,109</em> images, 471 reels and 571 links.</p></div>
+    <div class="card"><div class="award">Most Wanted</div><div class="who">Paul, then Stefano</div><p class="why">Tagged 200 and 174 times.</p></div>
+    <div class="card"><div class="award">The Rooster</div><div class="who">Peter</div><p class="why">About <em>5%</em> of messages sent between 5 and 7am. Also starts the most conversations after a quiet spell.</p></div>
+    <div class="card"><div class="award">Night Shift</div><div class="who">Thomas</div><p class="why">The most messages between midnight and 4am, by a wide margin.</p></div>
+    <div class="card"><div class="award">"Working Hard"</div><div class="who">Philip G.</div><p class="why"><em>67%</em> of messages on weekdays between 9 and 5, and only 8.5% on weekends. Philip F. is second at 60%.</p></div>
+    <div class="card"><div class="award">Weekend Warrior</div><div class="who">James</div><p class="why"><em>37%</em> of messages on Saturday or Sunday, and the quietest during work hours.</p></div>
+    <div class="card"><div class="award">Novelist</div><div class="who">Ed</div><p class="why">The longest average message at about <em>52</em> characters. Paul and Peter average 18.</p></div>
+    <div class="card"><div class="award">The Data Dump</div><div class="who">Ed</div><p class="why">The record: <em>52</em> messages in a row, mostly banknote designs, ending with "whatsapp stops u at 50".</p></div>
+    <div class="card"><div class="award">The Interrogator</div><div class="who">Simon</div><p class="why"><em>22</em> question marks per 100 messages. Ian is next.</p></div>
+    <div class="card"><div class="award">Ctrl+Z Champion</div><div class="who">Thomas</div><p class="why">Edits <em>4%</em> of messages, twice anyone else's rate.</p></div>
+    <div class="card"><div class="award">Witness Protection</div><div class="who">Adrian</div><p class="why">Deletes the most messages, at 1.8%. We'll never know.</p></div>
+    <div class="card"><div class="award">Podcast Host</div><div class="who">Miguel</div><p class="why"><em>35</em> voice notes, more than everyone else put together.</p></div>
+    <div class="card"><div class="award">GIF Lord</div><div class="who">Philip G.</div><p class="why"><em>5%</em> of messages are GIFs.</p></div>
+    <div class="card"><div class="award">Sticker King</div><div class="who">Peter</div><p class="why">The most stickers per message. Daniel is runner-up.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Personalities</h2>
+  <div class="grid">
+    <div class="card"><div class="award">Best Audience</div><div class="who">Andrea</div><p class="why">A third of all messages are laughs. Daniel is the most reliable laugher among the regulars.</p></div>
+    <div class="card"><div class="award">Emoji Machine</div><div class="who">Andrea, then Michael</div><p class="why">The most emoji per message.</p></div>
+    <div class="card"><div class="award">Stone Cold</div><div class="who">Philip F.</div><p class="why">The fewest laughs, emoji and warm messages, yet the most words in ALL CAPS.</p></div>
+    <div class="card"><div class="award">Most Maltese</div><div class="who">Adrian</div><p class="why">The most "mela", "insomma", "imma" and "nahseb" per message.</p></div>
+    <div class="card"><div class="award">Political Correspondent</div><div class="who">Ed and Marcus</div><p class="why">Ed for intensity, Marcus for volume with <em>295</em> political messages.</p></div>
+    <div class="card"><div class="award">Local News Desk</div><div class="who">Simon</div><p class="why">The most links to Maltese news sites per message.</p></div>
+    <div class="card"><div class="award">Petrolhead</div><div class="who">James</div><p class="why">Talks about cars the most. Stefano has the most car messages in total.</p></div>
+    <div class="card"><div class="award">Tech Bro</div><div class="who">Ed, then Thomas</div><p class="why">The most talk of AI, crypto, stocks and investing.</p></div>
+    <div class="card"><div class="award">Foodie</div><div class="who">Michael</div><p class="why">Talks about food four times more than anyone else.</p></div>
+    <div class="card"><div class="award">Bar Tab</div><div class="who">Philip F.</div><p class="why">The most booze talk per message. Stefano wins on total volume.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>The not-so-flattering ones</h2>
+  <div class="grid">
+    <div class="card neg"><div class="award">Conversation Killer</div><div class="who">Kevin</div><p class="why">Most often followed by 2+ hours of daytime silence. Thomas is a close second.</p></div>
+    <div class="card neg"><div class="award">Left on Read</div><div class="who">Thomas</div><p class="why">The lowest share of messages that get a quick reply (<em>30%</em>). Possibly related to the toxicity award.</p></div>
+    <div class="card"><div class="award">Instant Engagement</div><div class="who">Michael, Philip F., Ian</div><p class="why">More than half their messages get a reply within 2 minutes.</p></div>
+    <div class="card neg"><div class="award">Lurker</div><div class="who">Jerry</div><p class="why"><em>80</em> messages in almost two years.</p></div>
+  </div>
+</section>
+
+<footer>Method: keyword and timing counts over the WhatsApp export, for regulars with 180+ messages. It can't read sarcasm, images or every Maltese spelling, so take every award as seriously as the chat takes anything.</footer>
+</div>
+</body>
+</html>
